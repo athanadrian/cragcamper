@@ -26,19 +26,21 @@ node seeder -d
 
 node seeder -i
 
-****\*\***** HOW TO SET UP UR PROJECT TO A CLOUD SERVER (Digital Ocean) AND MAKE IT RUN
+## HOW TO SET UP UR PROJECT TO A CLOUD SERVER (Digital Ocean) AND MAKE IT RUN
 
 Node.js Deployment
 
-# Steps to deploy a Node.js app to DigitalOcean using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
+# Steps to deploy a Node.js app to Digital Ocean using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
 
 1. Sign up for Digital Ocean
 
 2. Create a droplet and log in via ssh
-   I will be using the root user (root@XXX.XXX.XXX.XXX the IP address of your droplet), but would suggest creating a new user
+   I will be using the root user (root@XXX.XXX.XXX.XXX the IP address of your droplet),
+   but would suggest creating a new user
 
 3. Install Node/NPM to the Server
-   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt install nodejs
 
@@ -50,8 +52,11 @@ node --version
 git clone yourproject.git
 
 5. Install dependencies and test app
+
    cd yourproject
+
    npm install
+
    npm start (or whatever your start command)
 
 # stop app
