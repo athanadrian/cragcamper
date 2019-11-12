@@ -6,7 +6,7 @@ const {
   createCrag,
   updateCrag,
   deleteCrag
-} = require('../controllers/Crags');
+} = require('../controllers/crags');
 
 const router = express.Router();
 
