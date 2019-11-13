@@ -1,39 +1,40 @@
-DevCamper API
+# DevCamper API
+
 Backend API for DevCamper application, which is a bootcamp directory website
 
-Usage
-Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+# Usage
 
-Install Dependencies
-npm install
-Run App
+    -   Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+    -   Install Dependencies
+    -   npm install
+    -   Run App
 
 # Run in dev mode
 
-npm run dev
+    npm run dev
 
 # Run in prod mode
 
-npm start
-Database Seeder
-To seed the database with users, bootcamps, courses and reviews with data from the "\_data" folder, run
+    npm start
+    Database Seeder
+    To seed the database with users, bootcamps, courses and reviews with data from the "\_data" folder, run
 
 # Destroy all data
 
-node seeder -d
+    node seeder -d
 
 # Import all data
 
-node seeder -i
+    node seeder -i
 
 # HOW TO PROVIDE API-DOCUMENTATION WITH POSTMAN AND DOCGEN
 
 # Through POSTMAN
 
-Right to the collection -> Publish Docs
-Choose Environment
-Choose Page Styling (Color, Fonts,...)
-Publish Collection
+    -   Right to the collection : Publish Docs
+    -   Choose Environment
+    -   Choose Page Styling (Color, Fonts,...)
+    -   Publish Collection
 
 # Through DOCGEN
 
@@ -66,9 +67,7 @@ Publish Collection
 3. Install Node/NPM to the Server
 
    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-
    sudo apt install nodejs
-
    node --version
 
 4. Clone your project from Github
