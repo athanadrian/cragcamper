@@ -26,6 +26,33 @@ node seeder -d
 
 node seeder -i
 
+## HOW TO PROVIDE API-DOCUMENTATION WITH POSTMAN AND DOCGEN
+
+# Through POSTMAN
+
+Right to the collection -> Publish Docs
+Choose Environment
+Choose Page Styling (Color, Fonts,...)
+Publish Collection
+
+# Through DOCGEN
+
+# Installation
+
+1. Mac
+   brew tap thedevsaddam/cli https://github.com/thedevsaddam/homebrew-cli.git
+   brew install docgen
+
+2. update
+   brew upgrade docgen
+
+3. Usage
+   - view live HTML documentation from postman collection use docgen server -f input-postman-collection.json -p 8000
+     This will open the html version of postman collection to the defined port
+   - view live Markown documentation from postman collection use docgen server -f input-postman-collection.json -p 8000 -m This will open the markdown version of postman collection to the defined port
+   - make HTML documentation use docgen build -i input-postman-collection.json -o ~/Downloads/index.html
+   - make Markdown documentation use docgen build -i input-postman-collection.json -o ~/Downloads/index.md -m
+
 ## HOW TO SET UP UR PROJECT TO A CLOUD SERVER (Digital Ocean) AND MAKE IT RUN
 
 Node.js Deployment
@@ -64,6 +91,7 @@ git clone yourproject.git
 ctrl+C
 
 6. Setup PM2 process manager to keep your app running
+
    sudo npm i pm2 -g
    pm2 start app (or whatever your file name)
 
@@ -132,7 +160,7 @@ Add SSL with LetsEncrypt
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install python-certbot-nginx
-sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+sudo certbot --nginx -d atana.site -d www.atana.site
 
 # Only valid for 90 days, test the renewal process with
 
