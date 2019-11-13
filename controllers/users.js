@@ -1,7 +1,7 @@
-const ErrorResponse = require('../utils/errorResponse');
-const sendEmail = require('../utils/sendEmail');
-const asyncHandler = require('../middleware/async');
-const User = require('../models/User');
+const ErrorResponse = require("../utils/errorResponse");
+const sendEmail = require("../utils/sendEmail");
+const asyncHandler = require("../middleware/async");
+const User = require("../models/User");
 
 //@desc         Get all Users
 //@route        Get /api/v1/users
@@ -14,7 +14,7 @@ exports.getUsers = asyncHandler(async (req, res, next) => {
 //@route        Get /api/v1/users/:id
 //@access       Private/Admin
 exports.getUser = asyncHandler(async (req, res, next) => {
-  const user = await User.findById(req.params.id).populate('reviews');
+  const user = await User.findById(req.params.id).populate("reviews");
 
   if (!user) {
     return next(
@@ -48,7 +48,7 @@ exports.createUser = asyncHandler(async (req, res, next) => {
 //@route        PUT /api/v1/users/:id
 //@access       Private/Admin
 exports.updateUser = asyncHandler(async (req, res, next) => {
-  const user = await User.findById(req.params.id);
+  let user = await User.findById(req.params.id);
 
   if (!user) {
     return next(
@@ -56,7 +56,7 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
       400
     );
   }
-  await User.findByIdAndUpdate(req.params.id, req.body, {
+  user = await User.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true
   });
