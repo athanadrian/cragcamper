@@ -92,14 +92,14 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
    - Other pm2 commands
 
-     pm2 show appname
-     pm2 status
-     pm2 restart appname
-     pm2 stop appname or alll
-     pm2 delete 0
-     pm2 delete all
-     pm2 logs (Show log stream)
-     pm2 flush (Clear logs)
+     - pm2 show appname
+     - pm2 status
+     - pm2 restart appname
+     - pm2 stop appname or alll
+     - pm2 delete 0
+     - pm2 delete all
+     - pm2 logs (Show log stream)
+     - pm2 flush (Clear logs)
 
    - To make sure app starts when reboot
 
@@ -109,11 +109,11 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
 7. Setup ufw firewall
 
-   sudo ufw enable
-   sudo ufw status
-   sudo ufw allow ssh (Port 22)
-   sudo ufw allow http (Port 80)
-   sudo ufw allow https (Port 443)
+   - sudo ufw enable
+   - sudo ufw status
+   - sudo ufw allow ssh (Port 22)
+   - sudo ufw allow http (Port 80)
+   - sudo ufw allow https (Port 443)
 
 8. Install NGINX and configure
 
@@ -153,10 +153,10 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
 2.  Choose "Custom nameservers" and add these 3
 
-    ns1.digitalocean.com
-    ns2.digitalocean.com
-    ns3.digitalocean.com
-    It may take a bit to propogate
+    -ns1.digitalocean.com
+    -ns2.digitalocean.com
+    -ns3.digitalocean.com
+    -It may take a bit to propogate
 
 # Add SSL with LetsEncrypt
 
