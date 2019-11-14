@@ -92,10 +92,12 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
    - Other pm2 commands
 
-     pm2 show app
+     pm2 show appname
      pm2 status
-     pm2 restart app
-     pm2 stop app
+     pm2 restart appname
+     pm2 stop appname or alll
+     pm2 delete 0
+     pm2 delete all
      pm2 logs (Show log stream)
      pm2 flush (Clear logs)
 
