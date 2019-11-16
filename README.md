@@ -136,9 +136,11 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
      sudo nginx -t
 
-10. Restart NGINX
+10. Restart NGINX any time we make a change in default file
 
     sudo service nginx restart
+    or
+    sudo systemctl nginx restart
 
     You should now be able to visit your IP with no port (port 80) and see your app. Now let's add a domain
 
