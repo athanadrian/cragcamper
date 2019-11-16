@@ -70,10 +70,15 @@ Backend API for DevCamper application, which is a bootcamp directory website
    sudo apt install nodejs
    node --version
 
-4. Clone your project from Github
-   There are a few ways to get your files on to the server, I would suggest using Git
+4. Get your files on to the server. There are a few ways to , I would suggest using Git
+
+   # Clone your project from Github to live server
 
    git clone yourproject.git
+
+   # Pushing changes from local project to Github and live server
+
+   git pull
 
 5. Install dependencies and test app
 
