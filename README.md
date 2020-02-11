@@ -78,7 +78,11 @@ Backend API for DevCamper application, which is a bootcamp directory website
 
    # Pushing changes from local project to Github and live server
 
-   git pull
+   - push all changes to git repository
+   - login to your server console
+   - git pull
+   - pm2 restart all
+   - pm2 start npm -- start
 
 5. Install dependencies and test app
 
